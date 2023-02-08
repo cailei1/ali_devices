@@ -1,15 +1,9 @@
 # ali_devices
 
-A new Flutter project.
+android 接入 阿里 设备唯一id 
+IOS 使用 keychain 存储唯一id
 
 ## Getting Started
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
-
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+获取android 和 IOS 设备唯一ID 的插件
 

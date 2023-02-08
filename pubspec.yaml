@@ -1,7 +1,8 @@
 name: ali_devices
-description: A new Flutter project.
+description: ali_devices 安卓IOS设备唯一id获取
 version: 0.0.1
-homepage:
+authorization: cailei
+homepage: https://github.com/cailei1/ali_devices.git
 
 environment:
   sdk: '>=2.18.4 <3.0.0'
