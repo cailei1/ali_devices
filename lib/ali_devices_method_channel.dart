@@ -40,4 +40,11 @@ class MethodChannelAliDevices extends AliDevicesPlatform {
     final token = await methodChannel.invokeMethod("getDeviceSecurityToken");
     return token;
   }
+
+  @override
+  Future<String?> getDeviceResult() async{
+    // TODO: implement getDeviceResult
+    final deviceId = await methodChannel.invokeMethod("getDeviceResult");
+    return deviceId;
+  }
 }

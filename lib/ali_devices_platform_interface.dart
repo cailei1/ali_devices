@@ -41,4 +41,9 @@ abstract class AliDevicesPlatform extends PlatformInterface {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
 
+
+  Future<String?> getDeviceResult() {
+    throw UnimplementedError('platformVersion() has not been implemented.');
+  }
+
 }

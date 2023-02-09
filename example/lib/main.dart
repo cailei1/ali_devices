@@ -35,7 +35,7 @@ class _MyAppState extends State<MyApp> {
     // We also handle the message potentially returning null.
     try {
       platformVersion =
-          await _aliDevicesPlugin.getDeviceUUID() ?? 'Unknown platform version';
+           'Unknown platform version';
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }
@@ -55,22 +55,24 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Plugin example app'),
+          title: const Text('设备唯一id获取'),
         ),
         body: Center(
           child: Column(
             children: [
-              Text('Running on: $_platformVersion\n'),
+              // Text('Running on: $_platformVersion\n'),
+              SizedBox(height: 50,),
               InkWell(
                   onTap: () async {
                     String? token =
-                        await _aliDevicesPlugin.getDeviceSecurityToken();
+                        await _aliDevicesPlugin.getDeviceResult();
                     _token = token!;
                     print(_token);
                     setState(() {});
                   },
-                  child: Text("获取token")),
-              Text('Device token: $_token\n'),
+                  child: Text("点击获取设备唯一id")),
+              SizedBox(height: 30,),
+              Text('Device id: $_token\n'),
             ],
           ),
         ),

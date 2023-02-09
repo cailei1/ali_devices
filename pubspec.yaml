@@ -1,6 +1,6 @@
 name: ali_devices
 description: ali_devices 安卓IOS设备唯一id获取
-version: 0.0.1
+version: 0.0.2
 authorization: cailei
 homepage: https://github.com/cailei1/ali_devices.git
 

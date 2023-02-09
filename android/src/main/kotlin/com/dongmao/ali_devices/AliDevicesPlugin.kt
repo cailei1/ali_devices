@@ -43,7 +43,7 @@ class AliDevicesPlugin : FlutterPlugin, MethodCallHandler {
         }else if(call.method == "getDeviceSecurityToken") {
            SecurityManager.getDeviceSecurityToken(result)
         }else if(call.method == "getDeviceResult"){
-
+            SecurityManager.getDeviceResult(result)
         }
         else {
             result.notImplemented()

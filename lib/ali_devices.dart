@@ -18,4 +18,8 @@ class AliDevices {
   Future<String?> getDeviceSecurityToken() {
     return AliDevicesPlatform.instance.getDeviceSecurityToken();
   }
+
+  Future<String?> getDeviceResult() {
+    return AliDevicesPlatform.instance.getDeviceResult();
+  }
 }
